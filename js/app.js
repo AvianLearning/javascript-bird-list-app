@@ -33,10 +33,28 @@ const createBirdListItem = function (form) {
     group.textContent = form.group.value;
     birdListItem.appendChild(group);
 
+    const image = document.createElement('img');
+    image.src = decideBirdImage();
+    birdListItem.appendChild(image);
+ 
     return birdListItem;
 }
 
 const handleDeleteAll = function (event) {
     const birdList = document.querySelector('#bird-list');
     birdList.innerHTML = '';
+}
+
+const decideBirdImage = function (form) {
+    const groupResult = form.group.value;
+    
+    switch(groupResult) {
+        case "Passerines":
+        imageShown = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+        break;
+        case "Waterfowl":
+        imageShown = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+        break;
+};
+    return imageShown;
 }
