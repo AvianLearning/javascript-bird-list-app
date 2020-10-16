@@ -34,7 +34,7 @@ const createBirdListItem = function (form) {
     birdListItem.appendChild(group);
 
     const image = document.createElement('img');
-    image.src = decideBirdImage();
+    image.src = 'https://i.pinimg.com/originals/2a/30/4c/2a304c8a193596646dca0c6c213c5852.jpg';
     birdListItem.appendChild(image);
  
     return birdListItem;
@@ -45,16 +45,27 @@ const handleDeleteAll = function (event) {
     birdList.innerHTML = '';
 }
 
-const decideBirdImage = function (form) {
-    const groupResult = form.group.value;
+// const decideBirdImage = function (form) {
+//     const groupResult = form.group.value;
     
-    switch(groupResult) {
-        case "Passerines":
-        imageShown = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
-        break;
-        case "Waterfowl":
-        imageShown = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
-        break;
-};
-    return imageShown;
-}
+//     switch(groupResult) {
+//         case "Passerines":
+//         return image.src = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+
+//         case "Waterfowl":
+//         return image.src = 'https://i.pinimg.com/originals/2a/30/4c/2a304c8a193596646dca0c6c213c5852.jpg';
+
+//         case "Gamebirds and non-passerines":
+//         return image.src = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+        
+//         case "Owls and Birds of Prey":
+//         return image = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+        
+//         case "Waders":
+//         return image = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+        
+//         case "Seabirds":
+//         return image = 'https://tgannon.incolor.com/grfs/birds256_oth/GoldfinchEur256x256.jpg';
+// };
+//         return image;
+// }
