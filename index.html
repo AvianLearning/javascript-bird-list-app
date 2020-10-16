@@ -8,6 +8,36 @@
     <script src="js/app.js"></script>
 </head>
 <body>
-    
+    <form id="new-bird-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="common-name">Common Name</label>
+                <input type="text" id="common-name" required>
+            </div>
+
+            <div class="form-item">
+                <label for="sci-name">Scientific Name</label>
+                <input type="text" id="sci-name" required>
+            </div>
+           
+            <div class="form-item">
+                <label for="group">Group</label>
+                <select id="group">
+                    <option value="" disabled selected></option>
+                    <option value="Waterfowl">Waterfowl</option>    
+                    <option value="Owls and Birds of Prey">Owls and Birds of Prey</option>    
+                    <option value="Waders">Waders</option> 
+                    <option value="Passerines">Passerines</option>    
+                    <option value="Seabirds">Seabirds</option>    
+                </select>
+            </div>
+        </div>
+        <input type="submit" value="save">
+    </form>
+
+    <button id="delete-all">Delete all</button>
+ 
+    <h1>British Birds</h1>
+    <ul id="bird-list"></ul>
 </body>
 </html>
