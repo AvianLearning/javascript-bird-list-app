@@ -1,5 +1,10 @@
 body {
     font-family: 'Martel', serif;
+    
+}
+
+main {
+    background-image: url('https://beaksandbranches.files.wordpress.com/2011/01/sc001e19c11.jpg');
 }
 
 #form-wrapper {
@@ -33,4 +38,8 @@ button, input[type="submit"] {
     border: 1px solid #20437c;
     border-radius: 5%;
     background: #ddeaff;
+  }
+
+  img {
+      max-width: 200px;
   }
