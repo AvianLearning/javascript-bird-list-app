@@ -33,6 +33,9 @@ const createBirdListItem = function (form) {
     group.textContent = form.group.value;
     birdListItem.appendChild(group);
 
+    const spotted = spottedInGarden(form);
+    birdListItem.appendChild(spotted);
+
     const image = decideBirdImage(form); 
     birdListItem.appendChild(image);
     
@@ -68,4 +71,13 @@ const decideBirdImage = function (form) {
         image.src = 'https://www.field-studies-council.org/wp-content/uploads/2019/08/OP161-Summer-coastal-birds-1067x1600.jpg';
     }
     return image;
+}
+const spottedInGarden = function (form) {
+    const spotted = document.createElement('p');
+    if (form.yes.checked === true) {
+        spotted.textContent = "Spotted in garden!"
+    } else if (form.no.checked === true) {
+        spotted.textContent = "Not spotted in garden."
+    }
+    return spotted;
 }

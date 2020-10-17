@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birds of Britain and Europe</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/birds.css">
     <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
 </head>
@@ -34,6 +33,20 @@
                     <option value="Waders">Waders</option>    
                     <option value="Seabirds">Seabirds</option>    
                 </select>
+            </div>
+            <div class="form-item">
+                <label for="spotted" id="spotted">Spotted in garden?</label>
+            <div>
+                <input type="radio" id="yes" name="garden" value="yes"
+                        checked>
+                <label for="yes">Yes</label>
+            </div>
+
+            <div>
+                <input type="radio" id="no" name="garden" value="no"
+                        checked>
+                <label for="no">No</label>
+            </div>
             </div>
         </div>
         <input type="submit" value="Add a bird">
